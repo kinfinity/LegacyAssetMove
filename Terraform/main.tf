@@ -18,3 +18,8 @@ module "s3-storage" {
   production_contact_email = ""
   iam_user = "s3-user"
 }
+
+module "vpc" {
+  source = "./vpc"
+  name  = "legacyassetmove-production"
+}
